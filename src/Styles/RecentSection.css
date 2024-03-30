@@ -1,0 +1,18 @@
+.recent-header{
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.recent-header h5{
+    margin-top: 3vh;
+    font-size: 2vh;
+}
+
+.recent-div{
+    width: 30vw;
+    height: 100%;
+    background-color: black; 
+}

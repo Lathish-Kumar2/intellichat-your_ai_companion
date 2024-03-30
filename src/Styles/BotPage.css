@@ -1,0 +1,207 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+
+.main-div{
+    height: 100vh;
+    width: 100%;
+    /* border: 2px solid white; */
+    /* margin-top: 1vh; */
+    /* border-radius: 5vh; */
+    box-shadow: 0px 0px 35px -5px rgba(243,238,238,0.6);
+    -webkit-box-shadow: 0px 0px 35px -5px rgba(243,238,238,0.6);
+    -moz-box-shadow: 0px 0px 35px -5px rgba(243,238,238,0.6);
+    display: flex;
+}
+
+.header{
+    height: 7vh;
+    background-color: #212121;
+    /* border-radius: 5vh 5vh 0 0; */
+    /* border-bottom: 2px solid black; */
+    color: white;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding-left: 0;
+}
+
+.bot-icon{
+    font-size: 3vh;
+    margin-top: 2vh;
+}
+
+.header h3{
+    font-size: 2.8vh;
+    margin-top: 0;
+    margin-left: 2vw;
+    font-weight: 700;
+    font-family:"Poppins",sans-serif;
+}
+
+
+
+
+
+.header .menu-btn{
+    display: flex;
+    float: right;
+    margin-left: 52vw;
+    font-weight: 400;
+    text-align: end;
+    margin-right: 0;
+    background-color: transparent;
+    border: none;
+    color: white;
+    transition-duration: 1s;
+}
+
+
+.menu-btn:hover{
+    /* transform: rotate(90deg); */
+    cursor: pointer;
+}
+
+
+.menu-btn:hover ~ .menu-div{
+    display: block;
+}
+
+.menu-btn {
+  transition: transform 0.3s ease; 
+}
+
+.menu-btn.open {
+  transform: rotate(90deg);
+  }
+
+
+.content-div{
+    width: 100vw;
+    /* border-radius: 0 5vh 5vh 0; */
+    /* display: flex;
+    flex-direction: column; */
+    background-color: #212121;
+    /* border: 2px solid white; */
+}
+
+
+.chat-area-div{
+    width: 73vw;
+    height: 80vh;
+    position: absolute;
+    /* border: 2px white solid; */
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.text-div{
+    width: 73vw;
+    height: 9vh;
+    /* border: 2px solid white; */
+    margin-top: 82vh;
+    margin-left: 2vw;
+     display: flex;
+    /*justify-content: center;
+    align-items: center; */
+    color: white;
+    
+    text-align: center;
+}
+
+.text-div textarea{
+    resize: none;
+    font-size: 2.6vh;
+    height: 8vh;
+    padding-left: 1vw;
+    background-color: black;
+    color:white;
+    border-radius: 5px;
+    font-weight: 600;
+    overflow: hidden;
+    padding-top: 1.5vh;
+    line-height: 5vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.mic-btn{
+    width: 3vw;
+    height: 8vh;
+    font-size: 4vh;
+    background-color:#212121 ;
+    color: white;
+    border: none;
+
+}
+
+.send-btn{
+    width: 3vw;
+    height: 8vh;
+    font-size: 5vh;
+    background-color:#212121 ;
+    color: white;
+    border: none;
+}
+
+.btns:hover{
+    cursor: pointer;
+    /* outline-offset: 5px;
+    outline-width: 3px;
+    outline-color: white;
+    outline-style: solid; */
+    /* border-bottom: 3px solid white; */
+    transform: scale(1.1);
+    
+}
+
+.mic-btn:hover{
+   animation: shrink 1.5s alternate infinite;
+   transform: scale(1.1);
+}
+
+@keyframes shrink {
+    0%{
+        transform: rotate(30deg);
+    }
+    50%{
+        transform: rotate(-30deg);
+    }
+    100%{
+        transform: rotate(-30deg);
+    }
+}
+
+.menu-div{
+    width: 12vw;
+    border: 2px solid white;
+    height: 15vh;
+    position: absolute;
+    margin-right: 0;
+    float: right;
+    margin-left: 62vw;
+    color: white;
+    justify-content: center;
+    border-radius: 3vh;
+    /* display: none; */
+    text-align: center;
+}
+
+.menu-div ul li{
+    display: block;
+    text-decoration: none;
+    
+    margin-top: 2vh;
+    font-size: 2.5vh;
+}
+
+
+
